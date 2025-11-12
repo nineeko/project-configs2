@@ -1,5 +1,12 @@
+spring:
+  cloud:
+    loadbalancer:
+      ribbon:
+        enabled: false
 
 management:
   endpoints:
     web:
-      exposure: refresh
+      exposure:
+        include: refresh
+
